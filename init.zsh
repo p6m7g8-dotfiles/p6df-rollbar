@@ -42,7 +42,7 @@ p6df::modules::rollbar::external::brews() {
 ######################################################################
 p6df::modules::rollbar::langs() {
 
-  npm install -g rollbar-cli
+  p6_js_npm_global_install "rollbar-cli"
 }
 
 ######################################################################
