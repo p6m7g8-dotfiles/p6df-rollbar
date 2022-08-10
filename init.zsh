@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -14,28 +15,6 @@ p6df::modules::rollbar::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::rollbar::vscodes()
-#
-#>
-######################################################################
-p6df::modules::rollbar::vscodes() {
-  true
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::rollbar::external::brews()
-#
-#>
-######################################################################
-p6df::modules::rollbar::external::brews() {
-  true
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::rollbar::langs()
 #
 #>
@@ -43,15 +22,6 @@ p6df::modules::rollbar::external::brews() {
 p6df::modules::rollbar::langs() {
 
   p6_js_npm_global_install "rollbar-cli"
-}
 
-######################################################################
-#<
-#
-# Function: p6df::modules::rollbar::init()
-#
-#>
-######################################################################
-p6df::modules::rollbar::init() {
-  true
+  p6_return_void
 }
