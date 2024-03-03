@@ -45,10 +45,7 @@
 #### p6df-rollbar/init.zsh:
 
 - p6df::modules::rollbar::deps()
-- p6df::modules::rollbar::external::brews()
-- p6df::modules::rollbar::init()
 - p6df::modules::rollbar::langs()
-- p6df::modules::rollbar::vscodes()
 
 
 
